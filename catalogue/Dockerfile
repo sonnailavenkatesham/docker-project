@@ -1,6 +1,4 @@
-FROM node:14.13-alpine
-RUN useradd roboshop
-USER roboshop
+FROM node:14
 WORKDIR /app
 COPY package.json /app
 COPY server.js /app
