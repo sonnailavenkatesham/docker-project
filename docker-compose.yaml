@@ -21,7 +21,8 @@ services:
     image: cart:v1
     container_name: cart
     depends_on:
-      - mongodb
+      - redis
+      - catalogue
     networks:
       - roboshop
   user:
